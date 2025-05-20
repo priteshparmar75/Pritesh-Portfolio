@@ -1,9 +1,9 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
-import 'package:flutter_portfolio/res/constants.dart';
-import 'package:flutter_portfolio/view/home/home.dart';
-import 'package:flutter_portfolio/view/intro/components/animated_texts_componenets.dart';
-import 'package:flutter_portfolio/view/splash/componenets/animated_loading_text.dart';
+import 'package:pritesh_portfolio/res/constants.dart';
+import 'package:pritesh_portfolio/view/home/home.dart';
+import 'package:pritesh_portfolio/view/intro/components/animated_texts_componenets.dart';
+import 'package:pritesh_portfolio/view/splash/componenets/animated_loading_text.dart';
 class SplashView extends StatefulWidget {
   const SplashView({super.key});
   @override

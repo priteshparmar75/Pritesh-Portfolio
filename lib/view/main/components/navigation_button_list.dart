@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_portfolio/view%20model/controller.dart';
-import 'package:flutter_portfolio/view%20model/responsive.dart';
+import 'package:pritesh_portfolio/view%20model/controller.dart';
+import 'package:pritesh_portfolio/view%20model/responsive.dart';
 
 import 'navigation_button.dart';
 

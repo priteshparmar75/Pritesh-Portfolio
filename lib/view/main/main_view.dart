@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_portfolio/view%20model/controller.dart';
-import 'package:flutter_portfolio/res/constants.dart';
-import 'package:flutter_portfolio/view/main/components/navigation_bar.dart';
+import 'package:pritesh_portfolio/view%20model/controller.dart';
+import 'package:pritesh_portfolio/view/main/components/navigation_bar.dart';
 import '../../view model/responsive.dart';
 import 'components/drawer/drawer.dart';
 import 'components/navigation_button_list.dart';
-import 'package:flutter/foundation.dart' show kIsWeb;
 class MainView extends StatelessWidget {
    const MainView({super.key, required this.pages});
   final List<Widget> pages;

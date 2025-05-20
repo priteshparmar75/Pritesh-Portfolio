@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_portfolio/res/constants.dart';
+import 'package:pritesh_portfolio/res/constants.dart';
 import 'drawer_image.dart';
 class About extends StatelessWidget {
   const About({super.key});
@@ -14,9 +14,9 @@ class About extends StatelessWidget {
             const Spacer(flex: 2,),
             const DrawerImage(),
             const Spacer(),
-            Text('Hamad Anwar',style: Theme.of(context).textTheme.titleSmall,),
+            Text('Pritesh Parmar',style: Theme.of(context).textTheme.titleSmall,),
             const SizedBox(height: defaultPadding/4,),
-            const Text('Flutter Developer & The Student of\nSoftware Engineering',
+            const Text('Sr Android & Flutter Developer\n(6+ Years Of Experience)',
               textAlign: TextAlign.center,
               style: TextStyle(
                   fontWeight: FontWeight.w200,

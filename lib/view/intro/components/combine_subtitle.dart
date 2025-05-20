@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_portfolio/view/intro/components/subtitle_text.dart';
+import 'package:pritesh_portfolio/view/intro/components/subtitle_text.dart';
 import 'package:flutter/foundation.dart' show kIsWeb;
 import '../../../view model/responsive.dart';
 
@@ -13,13 +13,13 @@ class CombineSubtitleText extends StatelessWidget {
       children: [
         const Responsive(
           desktop: AnimatedSubtitleText(
-              start: 30, end: 40, text: 'Flutter '),
+              start: 30, end: 40, text: 'Android & Flutter '),
           largeMobile: AnimatedSubtitleText(
-              start: 30, end: 25, text: 'Flutter '),
+              start: 30, end: 25, text: 'Android & Flutter '),
           mobile: AnimatedSubtitleText(
-              start: 25, end: 20, text: 'Flutter '),
+              start: 25, end: 20, text: 'Android & Flutter '),
           tablet: AnimatedSubtitleText(
-              start: 40, end: 30, text: 'Flutter '),
+              start: 40, end: 30, text: 'Android & Flutter '),
         ),
         (kIsWeb && Responsive.isLargeMobile(context)
             ? const Responsive(
