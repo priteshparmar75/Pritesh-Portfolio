@@ -36,7 +36,7 @@ class CertificateStack extends StatelessWidget {
                   certificateList[index].name,
                   style: Theme.of(context)
                       .textTheme
-                      .subtitle2!
+                      .titleSmall!
                       .copyWith(
                       color: Colors.white,
                       fontWeight: FontWeight.bold),
