@@ -37,10 +37,13 @@ class MenuButton extends StatelessWidget {
                               colors: [Colors.pink, Colors.blue.shade900])
                           .createShader(bounds);
                     },
-                    child: Icon(
-                      Icons.menu,
-                      color: Colors.white,
-                      size: defaultPadding * 1.2 * value,
+                    child: InkWell(
+                      onTap: onTap,
+                      child: Icon(
+                        Icons.menu,
+                        color: Colors.white,
+                        size: defaultPadding * 1.2 * value,
+                      ),
                     ),
                   )
                 ),

@@ -9,7 +9,7 @@ class ProjectLinks extends StatelessWidget {
   const ProjectLinks({super.key, required this.index});
   @override
   Widget build(BuildContext context) {
-    return Row(
+    return projectList[index].link.isEmpty ? const SizedBox() : Row(
       children: [
         Row(
           children: [
