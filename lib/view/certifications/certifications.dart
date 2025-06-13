@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:pritesh_portfolio/view%20model/getx_controllers/certification_controller.dart';
 import 'package:pritesh_portfolio/view/projects/components/title_text.dart';
 import 'package:get/get.dart';
+import '../../model/certificate_model.dart';
 import '../../res/constants.dart';
 import '../../view model/responsive.dart';
 import 'components/certification_grid.dart';
@@ -25,11 +26,11 @@ class Certifications extends StatelessWidget {
           ),
           Expanded(
               child: Responsive(
-                  desktop: CertificateGrid(crossAxisCount: 3,ratio: 1.5,),
-                  extraLargeScreen: CertificateGrid(crossAxisCount: 4,ratio: 1.6),
-                  largeMobile: CertificateGrid(crossAxisCount: 1,ratio: 1.8),
-                  mobile: CertificateGrid(crossAxisCount: 1,ratio: 1.4),
-                  tablet: CertificateGrid(ratio: 1.7,crossAxisCount: 2,)))
+                  desktop: CertificateGrid(crossAxisCount: 3,ratio: 1.5,certificate: certificateList,),
+                  extraLargeScreen: CertificateGrid(crossAxisCount: 4,ratio: 1.6,certificate: certificateList,),
+                  largeMobile: CertificateGrid(crossAxisCount: 1,ratio: 1.8,certificate: certificateList,),
+                  mobile: CertificateGrid(crossAxisCount: 1,ratio: 1.4,certificate: certificateList,),
+                  tablet: CertificateGrid(ratio: 1.7,crossAxisCount: 2,certificate: certificateList,)))
         ],
       ),
     );

@@ -19,6 +19,7 @@ class MainView extends StatelessWidget {
                 height: 80,
                 child: TopNavigationBar(),
             ),
+
             if(Responsive.isLargeMobile(context))  const Row(children: [Spacer(),NavigationButtonList(),Spacer()],),
             Expanded(
                 flex: 9,

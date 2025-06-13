@@ -7,13 +7,14 @@ import 'certificates_details.dart';
 class CertificateGrid extends StatelessWidget {
   final int crossAxisCount;
   final double ratio;
-  CertificateGrid({super.key, this.crossAxisCount = 3,  this.ratio=1.3});
+  final List<CertificateModel> certificate;
+  CertificateGrid({super.key, this.crossAxisCount = 3,  this.ratio=1.3,required this.certificate});
   final controller = Get.put(CertificationController());
   @override
   Widget build(BuildContext context) {
     return GridView.builder(
       padding: const EdgeInsets.symmetric(horizontal: 30),
-      itemCount: certificateList.length,
+      itemCount: certificate.length,
       gridDelegate:  SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: crossAxisCount, childAspectRatio: ratio),
       itemBuilder: (context, index) {
@@ -38,7 +39,7 @@ class CertificateGrid extends StatelessWidget {
                     offset: const Offset(2, 0),
                     blurRadius: controller.hovers[index] ? 20 : 10,),
                 ]),
-            child: CertificateStack(index: index)
+            child: CertificateStack(index: index,certificate: certificate,)
         ));
       },
     );

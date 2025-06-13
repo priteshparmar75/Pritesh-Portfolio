@@ -31,17 +31,17 @@ class ProjectDetail extends StatelessWidget {
         Responsive.isMobile(context)
             ? const SizedBox(
                 height: defaultPadding / 2,
-              )
+        )
             : const SizedBox(
                 height: defaultPadding,
               ),
         Text(
           projectList[index].description,
           style: const TextStyle(color: Colors.grey, height: 1.5),
-          maxLines: projectList[index].link.isEmpty ? 6 : size.width > 700 && size.width < 750
+          maxLines: projectList[index].link.isEmpty ? 4 : size.width > 700 && size.width < 750
               ? 3
               : size.width < 470
-                  ? 2
+                  ? 4
                   : size.width > 600 && size.width < 700
                       ? 6
                       : size.width > 900 && size.width < 1060
@@ -53,7 +53,7 @@ class ProjectDetail extends StatelessWidget {
         ProjectLinks(
           index: index,
         ),
-        const SizedBox(
+        Responsive.isMobile(context) ? const SizedBox(): const SizedBox(
           height: defaultPadding / 2,
         ),
       ],

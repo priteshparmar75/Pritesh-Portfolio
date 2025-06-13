@@ -92,13 +92,42 @@ List<CertificateModel> certificateList = [
     skills: 'Cyber Security . Networking ',
     credential:  'https://codered.eccouncil.org/certificate/43a2d2a7-40ed-4230-9e65-a9aa0935e651?logged=false',
   ),
+];
 
-
-
-
-
-
-
-
-
+List<CertificateModel> companyList = [
+  CertificateModel(
+    name: 'Captus Technologies Pvt.Ltd',
+    organization: 'Android | Flutter',
+    date: '2023- Present',
+    skills: 'Published and maintained apps onGoogle Play Store and Apple App Store with version control usingGit Built and deployed multi-flavored applications using build variants and custom Gradle configurations Designed custom animations and transitions to enhance user experience and engagement',
+    credential:  '',
+  ),
+  CertificateModel(
+    name: 'MatrixHive Technologies Pvt.Ltd',
+    organization: 'Android | Flutter',
+    date: '2022 - 2023',
+    skills: 'Optimized app performance,reduced crashes, and ensured compatibility with latestOS versions Participated in product planning, sprintretrospectives, and backlog grooming sessions Mentored junior developers and onboarded new team members on project structure and tools Built reusable custom components to accelerate development across projects',
+    credential:  '',
+  ),
+  CertificateModel(
+    name: 'IQlance Solution Pvt.Ltd',
+    organization: 'Android | Flutter',
+    date: '2020 - 2022',
+    skills: 'Developed and executed unit and integration tests to ensure application stability and performance Resolved bugs and performance issues across various Android devices and Flutter platforms Troubleshot and resolved application defects and issues',
+    credential:  '',
+  ),
+  CertificateModel(
+    name: 'Capermint Technologies Pvt.Ltd',
+    organization: 'Android | Flutter',
+    date: '2019 – 2020',
+    skills: 'Conduct code reviews and provide feedback to improve code quality Develop and execute unittests and perform system testing to ensure software quality',
+    credential:  '',
+  ),
+  CertificateModel(
+    name: 'Das Solution Pvt.Ltd',
+    organization: 'Android',
+    date: '2018 – 2019',
+    skills: 'Ensuring app performance and stability across various Android devices and platforms. Staying up-to-date with the latest Android technologies, including new Android versions, libraries, and APIs Providing technical support and resolving issues related to Android applications.',
+    credential:  '',
+  ),
 ];
